@@ -7,6 +7,12 @@ export const CardContainer = styled.div`
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  background-color: lightgray;
+
+  @media screen and (max-width: 430px) {
+    height: 100%;
+    width: 100%;
+  }
 `;
 
 export const InfoContainer = styled.div`
@@ -40,4 +46,30 @@ export const IconsContainer = styled.div`
   background-color: gray;
   height: 50px;
   width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1.5rem;
+
+  @media screen and (max-width: 430px) {
+    flex-grow: 1;
+    font-size: 2rem;
+  }
+`;
+
+export const TableContainer = styled.table`
+  width: 100%;
+  height: 50%;
+  color: black;
+`;
+
+export const TableHead = styled.th`
+  color: black;
+  background-color: gray;
+`;
+
+export const TableData = styled.td`
+  color: black;
+  background-color: lightgray;
+  text-align: center;
 `;

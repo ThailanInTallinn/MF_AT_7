@@ -5,7 +5,13 @@ import {
   Name,
   ProfilePic,
   SmallerInfo,
+  TableContainer,
+  TableHead,
+  TableData,
 } from "./styledcomponents";
+import { FaPhoneAlt } from "react-icons/fa";
+import { IoMdMail } from "react-icons/io";
+import { IoLocationSharp } from "react-icons/io5";
 
 export default function Card() {
   return (
@@ -17,9 +23,35 @@ export default function Card() {
         <SmallerInfo>Sustos</SmallerInfo>
         <SmallerInfo>Assistente</SmallerInfo>
         <IconsContainer>
-          <p>jahsdfjhsf</p>
+          <FaPhoneAlt></FaPhoneAlt>
+          <IoMdMail></IoMdMail>
+          <IoLocationSharp></IoLocationSharp>
         </IconsContainer>
       </InfoContainer>
+      <TableContainer>
+        <tr>
+          <TableHead>Estado</TableHead>
+          <TableHead>Tarefas</TableHead>
+        </tr>
+        <tr>
+          <TableData>Tarefa 1</TableData>
+          <TableData>
+            <input type="checkbox" />
+          </TableData>
+        </tr>
+        <tr>
+          <TableData>Tarefa 2</TableData>
+          <TableData>
+            <input type="checkbox" />
+          </TableData>
+        </tr>
+        <tr>
+          <TableData>Tarefa 3</TableData>
+          <TableData>
+            <input type="checkbox" />
+          </TableData>
+        </tr>
+      </TableContainer>
     </CardContainer>
   );
 }
