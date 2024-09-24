@@ -1,3 +1,5 @@
+import { CardContainer } from "./styledcomponents";
+
 export default function Card() {
-    return()
+  return <CardContainer></CardContainer>;
 }
